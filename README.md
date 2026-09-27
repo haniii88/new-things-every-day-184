@@ -10,7 +10,7 @@ function dailyLog184() {
     item => item.stock < item.minimum
   );
 
-  const totalItems = inventory.reduce(
+  const totalItems = inventory.reduce(0
     (sum, item) => sum + item.stock,
     0
   );
